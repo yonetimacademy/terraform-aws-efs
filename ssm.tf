@@ -1,6 +1,6 @@
 resource "aws_ssm_parameter" "main_id" {
   name        = "/${var.tenant}/${var.name}/${var.environment}/efs/${var.efs_name}/id"
-  description = "Managed by Magicorn"
+  description = "Managed by yonetimacademy"
   type        = "SecureString"
   value       = aws_efs_file_system.main.id
 
@@ -9,14 +9,14 @@ resource "aws_ssm_parameter" "main_id" {
     Tenant      = var.tenant
     Project     = var.name
     Environment = var.environment
-    Maintainer  = "Magicorn"
+    Maintainer  = "yonetimacademy"
     Terraform   = "yes"
   }
 }
 
 resource "aws_ssm_parameter" "main_dns" {
   name        = "/${var.tenant}/${var.name}/${var.environment}/efs/${var.efs_name}/dns"
-  description = "Managed by Magicorn"
+  description = "Managed by yonetimacademy"
   type        = "SecureString"
   value       = aws_efs_file_system.main.dns_name
 
@@ -25,7 +25,7 @@ resource "aws_ssm_parameter" "main_dns" {
     Tenant      = var.tenant
     Project     = var.name
     Environment = var.environment
-    Maintainer  = "Magicorn"
+    Maintainer  = "yonetimacademy"
     Terraform   = "yes"
   }
 }
