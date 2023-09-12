@@ -10,4 +10,3 @@ variable "efs_name" {}
 variable "performance_mode" {}
 variable "throughput_mode" {}
 variable "provisioned_throughput_in_mibps" {}
-variable "backup_policy" {}
